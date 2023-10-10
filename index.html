@@ -3,12 +3,313 @@
 <head>
     <meta charset="UTF-8" />
     <title>AMIT KUMAR</title> 
-    <link rel="stylesheet" href="grafikally.css"> 
+    <!-- <link rel="stylesheet" href="grafikally.css">  -->
+    <style>
+        body {
+    margin: 0%;
+    padding: 0%;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+nav > img {
+    float: left;
+    height: 40px;
+    width: 110px;
+    margin: 10px 0px 0px 60px;
+
+}
+
+header {
+   background-image: url(bg1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-color: rgba(255, 255, 255, 0.421);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    height: 700px;
+}
+
+.navbar {
+    color: rgb(255, 251, 251);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    padding: 5px;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    margin: 10px;
+    transition: all ease 0.4s;
+}
+
+a:hover {
+    background-color: rgb(207, 155, 42);
+    border-radius: 10px;
+}
+
+a:active {
+    scale: 0.8;
+}
+
+ul > button {
+    background-color: rgb(83, 83, 200);
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    padding: 7px;
+}
+
+.head {
+    padding: 100px;
+    text-align: center;
+}
+
+.head > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 500px;
+}
+
+div > img {
+    max-width: 65%;
+    height: auto;
+}
+
+.head > div > button {
+    border-radius: 10px;
+    width: 100px;
+    padding: 7px;
+    color: rgb(243, 242, 247);
+    background-color: rgb(83, 83, 200);
+    margin: 10px;
+}
+
+.head > div > button:hover {
+    background-color: rgb(255, 119, 0);
+}
+
+h1:nth-child(1) {
+    color: rgb(83, 83, 200);
+}
+
+@media screen and (max-width: 768px) {
+    .head > div {
+        width: 100%;
+    }
+
+    .div1 > div,
+    .sec1 > div {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.mid {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.mid div {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.76);
+    text-align: center;
+    padding-top: 35px;
+}
+
+.mid > img {
+    width: 299px;
+    height: 200px;
+    margin: 4px;
+    border: solid;
+    border-width: 4px;
+}
+
+.sec1{
+        padding: 80px;
+        text-align: center;
+    }
+    .sec1>div{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .sec1>div>img{
+        width:900px;
+        height:500px;
+        border: double #ff6100  5px;
+      float: right;
+    }
+    .sec1>div>p{
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+    .sec1>div>h1{
+        font-size: xxx-large;
+        width: 350px;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+.sec1>div>a{
+padding: 10px 20px;
+color: white;
+background-color:cadetblue;
+text-decoration: none;
+border-radius: 15px; 
+margin: auto;
+margin-right: 50px;
+}
+
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #283e74;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+
+button:hover {
+    background-color: #ff6100;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+#contact p {
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 15px 0; 
+}
+
+footer>div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 90px;
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    footer>div {
+        width: 100%;
+        margin: 10px 0; 
+    }
+}
+
+footer p{
+    color: #fff;
+}
+#same{
+    font-size: xx-large;
+    color: #ff6100;
+}
+hr{
+   border: #ff6100 solid;  
+}
+h2{
+    position: relative;
+    font-size: xx-large;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 2px;
+    width: 0%;
+    background-color: #000000;
+    transition: all ease-in-out 1s;
+}
+h2:hover::after{
+    width: 100%;
+}
+img{
+    filter: drop-shadow(10px 10px 20px rgb(58, 58, 58));
+    
+}
+h4{
+    font-size: x-large;
+}
+h1{
+    font-size: xx-large;
+}
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
-           <img src="resource/10.jpg" alt="logo">
+           <img src="10.jpg" alt="logo">
            <ul><li><a href="">HOME</a><a href="https://amitkumar0712.github.io/foodbox/">SERVICES</a><a href="#contact">CONTACT</a></li></ul>
 
         </nav>
@@ -20,39 +321,41 @@
             <button>Try It Free</button><button>Explore Now</button>
            </div>
            <div>
-            <img src="resource/amit.png" alt="">
+            <img src="amit.png" alt="">
            </div>
         </div>
     </header>
     <section class="mid">
         <h2>SERVICES</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga tenetur esse rem cupiditate provident nisi repellendus voluptates minus modi?</p>
             <div>
-                <img src="RESOURCE/z2.jpg" alt="">
-                <h5>Grand Motel gets an identity brushup</h5>
-                <p>identity</p>
+                <img src="z2.jpg" alt="">
+                <h4>Grand Motel gets an identity brushup</h4>
+                <pre>Lorem ipsum dolor sit,adipisicing elit. A, asperiores!
+     <u>identity</u> </pre>
             </div>
             <div>
-                <img src="RESOURCE/men2.jpg" alt="">
-                <h5>Fresh branding for a creative startup</h5>
-                <p>identity</p>
+                <img src="men2.jpg" alt="">
+                <h4>Fresh branding for a creative startup</h4>
+                <pre>Lorem ipsum dolor sit,adipisicing elit. A, asperiores!
+     <u>identity</u> </pre>
             </div>
         <br>
        <br>
-        <img src="RESOURCE/pexels-jeffrey-czum-7465050.jpg" alt="">
-        <img src="RESOURCE/z1.jpg" alt="">
-        <img src="RESOURCE/head img.jpg" alt="">
-        <img src="RESOURCE/happy.jpg" alt="">
+        <img src="pexels-jeffrey-czum-7465050.jpg" alt="">
+        <img src="z1.jpg" alt="">
+        <img src="head img.jpg" alt="">
+        <img src="happy.jpg" alt="">
     </section>
     <section class="sec1" >
       <div>
           <h1>About the Vipp Hotel</h1>
           <p>All the Vipp Hotel is ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi minima in maxime vitae? Ut reprehenderit quo quam provident aliquam.</p>
           <a href="tel:9992196879">Contact Us</a>
-          <span>For More Details </span>
+          <span>For More Details <hr></span>
       </div>
       <div>
-          <img src="resource/h1.jpg" alt="">
+          <img src="h1.jpg" alt="">
       </div>
   </section>
   <footer>
@@ -84,6 +387,6 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
-    <p>&copy; 2023 Your Agency. All rights reserved.</p>
+    <marquee behavior="" direction=""><p>&copy; 2023 Your Agency. All rights reserved.</p></marquee>
 </body>
 </html>
